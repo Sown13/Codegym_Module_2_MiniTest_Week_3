@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        ManagerEmployee employeeList = new ManagerEmployee();
+        EmployeeManager employeeList = new EmployeeManager();
         Employee e1 = new FullTimeEmployee("Fulltime", "Son", 30, 123456789, "son@mail", 100000, 0, 1000000);
         Employee e2 = new FullTimeEmployee("Fulltime", "Nam", 40, 123456789, "nam@mail", 50000, 50000, 700000);
         Employee e3 = new FullTimeEmployee("Fulltime", "Giang", 40, 123456789, "giang@mail", 200000, 0, 2000000);
