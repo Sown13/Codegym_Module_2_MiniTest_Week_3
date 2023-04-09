@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class ManagerEmployee {
+public class EmployeeManager {
     List<Employee> employeeList = new ArrayList<>();
 
     public double getAverageSalary(){
@@ -52,6 +51,15 @@ public class ManagerEmployee {
                 System.out.println("net salary: " + employee.getNetSalary() + " " + employee);
             }
         }
+    }
+    public void sortByName(){
+        employeeList.sort(Comparator.comparing(Employee::getName));
+    }
+    public void sortByID(){
+        employeeList.sort(Comparator.comparing(Employee::getEmployeeID));
+    }
+    public void sortByAge(){
+        employeeList.sort(Comparator.comparing(Employee::getAge));
     }
     public void displayEmployeeList(){
         System.out.println(employeeList);
